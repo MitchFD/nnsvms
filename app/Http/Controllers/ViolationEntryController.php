@@ -39,7 +39,8 @@ class ViolationEntryController extends Controller
                         ->take(5)
                         ->get();
 
-            $output = '<div class="list-group mt-3 ml-3">';         
+            $output = '<div class="list-group mt-3 ml-3">';
+         
                             foreach($data as $student){
                                 $output .= '
                             <div class="row">
@@ -57,6 +58,7 @@ class ViolationEntryController extends Controller
                             </div>
                                     ';
                             }
+                        
             $output .= '</div>';
             echo $output;
         }
