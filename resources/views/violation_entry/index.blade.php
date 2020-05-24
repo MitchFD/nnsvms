@@ -41,7 +41,7 @@
 
     <!-- Modal -->
     <div class="modal fade" id="violationEntryForm" tabindex="-1" role="dialog" aria-labelledby="violationEntryFormLabel" aria-hidden="true">
-        <div class="modal-dialog modal-md" role="document">
+        <div class="modal-dialog" role="document">
         <div class="modal-content modal-card">
             <div class="modal-header d-flex align-items-center">
                 <h5 class="modal-title" id="violationEntryFormLabel">Violation Entry</h5>
@@ -65,23 +65,107 @@
                                     <img class="student_img_modal" src="../paper/img/students_images/default_student_image.jpg" alt="">
                                 </div>
                                 <div class="student_details_div_modal">
-                                    <p class="student_id_txt_modal">20150348</p>
-                                    <p class="student_name_txt_modal">Mitch Frankein O. Desierto</p>
-                                    <p class="student_details_txt_modal">BSIT-4A | SBCS</span></p>
+                                    <p class="student_id_txt_modal">20150789</p>
+                                    <p class="student_name_txt_modal">Aeron Ver G. Dualan</p>
+                                    <p class="student_details_txt_modal">BSN-1B | SIHTM</span></p>
                                     {{-- <p class="student_violation_count">4 Recorded Violations</span></p> --}}
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-4">
+                    <div class="row mt-3">
                         <div class="col-lg-12 col-md-12 col-sm-12">
-                            <p class="minor_offenses_txt">Minor Offenses</p>
-                            <div class="form-group">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" name="pda" class="custom-control-input circle_cb" id="minorViolation7">
-                                    <label class="custom-control-label cb_label" for="minorViolation7">Indecent Public Display of Affection</label> 
+                            <div class="card-body student_offenses_card">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <p class="offense_title">MINOR OFFENSES</p>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" name="" class="custom-control-input circle_cb" id="mv1">
+                                                <label class="custom-control-label cb_label" for="mv1">Violation of Dress Code</label> 
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" name="" class="custom-control-input circle_cb" id="mv2">
+                                                <label class="custom-control-label cb_label" for="mv2">Not Wearing the Prescribed Uniform</label> 
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" name="" class="custom-control-input circle_cb" id="mv3">
+                                                <label class="custom-control-label cb_label" for="mv3">Not Wearing an ID</label> 
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" name="" class="custom-control-input circle_cb" id="mv4">
+                                                <label class="custom-control-label cb_label" for="mv4">Littering</label> 
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" name="" class="custom-control-input circle_cb" id="mv5">
+                                                <label class="custom-control-label cb_label" for="mv5">Using Cellular Phones and Other E-Gadgets while having a class</label> 
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" name="" class="custom-control-input circle_cb" id="mv6">
+                                                <label class="custom-control-label cb_label" for="mv6">Body Piercing</label> 
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" name="" class="custom-control-input circle_cb" id="mv7">
+                                                <label class="custom-control-label cb_label" for="mv7">Indicent Public Display of Affection</label> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <p class="offense_title">LESS SERIOUS OFFENSES</p>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" name="" class="custom-control-input circle_cb" id="lv1">
+                                                <label class="custom-control-label cb_label" for="lv1">Wearing Somebody Else's ID</label> 
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" name="" class="custom-control-input circle_cb" id="lv2">
+                                                <label class="custom-control-label cb_label" for="lv2">Wearing tampered/Unauthorized ID</label> 
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" name="" class="custom-control-input circle_cb" id="lv3">
+                                                <label class="custom-control-label cb_label" for="lv3">Lending his/Her ID</label> 
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" name="" class="custom-control-input circle_cb" id="lv4">
+                                                <label class="custom-control-label cb_label" for="lv4">Smoking or Possession of Smoking Paraphernalia</label> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="ov" class="offense_title">Others</label>
+                                            <textarea class="form-control" id="ov" rows="4"></textarea>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <p class="recorded_by_txt"><i class="nc-icon nc-alert-circle-i mr-1 font-weight-bold"></i> Recorded by: <span class="font-weight-bold ml-1 text-secondary">{{ auth()->user()->user_role }} {{ auth()->user()->first_name }} {{ auth()->user()->last_name }}</span> </p>
                         </div>
                     </div>
                 </div>

@@ -355,6 +355,10 @@ p.student_number_txt{
         border-radius: 12px !important;
         /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important; */
     }
+    .student_offenses_card{
+        background-color: #f8f9fa !important;
+        border-radius: 12px !important;
+    }
     .form_title_div{
         text-align: center !important;
         line-height: 25px !important;
@@ -424,13 +428,26 @@ p.student_number_txt{
         font-weight: 10px !important;
         font-style: italic;
     }
-    p.minor_offenses_txt{
+    .offense_title{
         font-size: 14px !important;
         font-weight: bold;
+        text-transform: uppercase !important;
     }
     /* checkbox */
     label.cb_label{
         padding-top: 2px !important;
+    }
+    p.recorded_by_txt{
+        font-size: 12px !important;
+        font-style: italic;
+        margin-bottom: 0px !important;
+        vertical-align:middle !important;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
 

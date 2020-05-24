@@ -45,7 +45,7 @@ class ViolationEntryController extends Controller
                                 $output .= '
                             <div class="row">
                                 <div class="col-lg-8 col-md-12 col-sm-12" >
-                                    <a href="#" data-toggle="modal" data-target="#violationEntryForm" class="list-group-item list-group-item-action d-flex justify-content-start text-decoration-none">
+                                    <a href="#" data-toggle="modal" data-target="#violationEntryForm_{{$student->student_id}}" class="list-group-item list-group-item-action d-flex justify-content-start text-decoration-none">
                                         <div class="student_image_div mr-3">
                                             <img class="student_img" src="../paper/img/students_images/default_student_image.jpg" alt="Student Image">
                                         </div>
