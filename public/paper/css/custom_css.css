@@ -1,0 +1,447 @@
+
+.text_sdca,
+a.text_sdca:focus,
+a.text_sdca:hover {
+  color: #BD171B !important;
+}
+
+/* Card */
+.br_radius_bl{
+    border-bottom-left-radius: 12px !important;
+}
+.br_radius_br{
+    border-bottom-right-radius: 12px !important;
+}
+.br_radius_tl{
+    border-top-left-radius: 12px !important;
+}
+.br_radius_tr{
+    border-top-right-radius: 12px !important;
+}
+.br_radius_bottom{
+    border-bottom-right-radius: 12px !important;
+    border-bottom-left-radius: 12px !important;
+}
+
+/* Login page */
+.login_logo{
+    width: auto !important;
+    height: 70px !important;
+}
+a.sdca_link{
+    text-decoration: none;
+    color: #BD171B;
+}
+.btn-sdca {
+    background-color: #BD171B;
+    color: #fff;    
+}
+
+/* User Profile */
+    /* User Image Parent Div */
+    .card-user .user_image_div{
+        height: 160px;
+        width: 160px;
+        background-color: #fff;
+        border: 5px solid #BD171B;
+        border-radius: 50%;
+        position: relative;
+        background-image: url('/paper/img/user/user_default_image.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    /* Image Tag */
+    .user_image_div .img_user_image{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    /* button */
+    .user_image_btn{
+        height: 40px;
+        width: 40px;
+        padding: 1px;
+        text-decoration: none;
+        position: absolute;
+        border-radius: 50%;
+        font-size: 16px;
+        margin-left: 45px;
+        margin-top: -80px;
+        border: 0px;
+    }
+    /* User Image Upload on MOdal */
+    .user_image_div_modal{
+        width: 180px !important;
+        height: 180px !important;
+    }
+    /* button */
+    .user_image_btn_on_modal{
+        height: 40px;
+        width: 40px;
+        padding: 1px;
+        text-decoration: none;
+        position: absolute;
+        border-radius: 50%;
+        font-size: 18px;
+        margin-left: -30px;
+        margin-top: 100px;
+        border: 0px;
+    }
+    input[type="file"] {
+        display: none;
+    }
+
+    .imagePreview {
+        width: 180px;
+        height: 180px;
+        border: 5px solid #BD171B;
+        border-radius: 50%;
+        background-color:#fff;
+        background-position: center center;
+        background: url('/paper/img/user/user_default_image.jpg');
+        background-size: cover;
+        background-repeat:no-repeat;
+        display: inline-block;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important
+    }
+    .imagePreview .img_user_image{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+    .upload_image_btn
+    {
+        display:block;
+        font-size: 18px !important;
+        height: 45px;
+        width: 45px;
+        padding: auto !important;
+        text-decoration: none;
+        position: absolute;
+        border-radius: 50%;
+        margin-left: 170px;
+        margin-top: -70px;
+    }
+
+/* users */
+.btn_edit_profile{
+    height: 40px;
+    width: 40px;
+    padding: 1px;
+    text-decoration: none;
+    position: absolute;
+    border-radius: 50%;
+    font-size: 16px;
+    margin-left: -30px;
+    margin-top: 90px;
+    border: 0px;
+}
+a.btn_edit_profile:hover{
+    text-decoration: none;
+}
+
+.user_image_edit{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+/* registered Guards card */
+.bg_darken_gray{
+    background-color: #EBEBEB;
+}
+div.circle_div{
+    border-radius: 50%;
+}
+.user_image_circle img{
+    width: 40px;
+    height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50% !important;
+}
+div.user_name_status{
+    line-height: 15px;
+}
+span.user_name_label_txt{
+    font-size: 14px;
+    font-weight: normal;
+}
+span.user_status_txt{
+    font-size: 10px;
+    font-weight: bold;
+}
+p.user_name_txt{
+    font-size: 16px;
+    font-weight: bold;
+}
+a.user_card_as_link{
+    text-decoration: none !important;
+}
+.user_card:hover{
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important
+}
+
+/* top nav */
+.user_image_circle_small{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.short_svms_text{
+    display: none;
+}
+
+/* modal */
+.modal-card {
+    border-radius: 12px;
+    box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+    background-color: #FFFFFF;
+    color: #252422;
+    border: 0 none;
+}
+
+/* Edit Profile Modal */
+/* .card .user_image_on_modal {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 15px;
+} */
+.card-user .user_image_on_modal {
+    width: 180px !important;
+    height: 180px !important;
+    border: 8px solid #51bcda;
+    position: relative;
+}
+.card-user .author_on_modal {
+    margin-top: -100px !important;
+}
+.card-user .author_on_modal a+p.description {
+    margin-top: -7px;
+}
+.user_image_upload_btn{
+    height: 50px;
+    width: 50px;
+    padding: 0px;
+    padding-top: 1px;
+    text-decoration: none;
+    position: absolute;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-left: -30px;
+    margin-top: 100px;
+    border: 0px;
+}
+a.user_image_upload_btn:hover{
+    text-decoration: none;
+}
+p.role_description_txt{
+    font-size: 14px;
+    font-weight: 600 !important;
+}
+
+/* User Activity Table */
+.user_activity_table_div{
+    overflow-y: auto !important;
+    overflow-x:  auto;
+    -webkit-overflow-scrolling: touch !important;
+    height: auto;
+    min-height: auto;
+    max-height: 725px !important;
+}
+th.th_left{
+    text-align: left !important;
+}
+td.td_left{
+    text-align: left !important;
+}
+.user_activity_table_div thead th{
+    position: sticky;
+    top: 0;
+}
+
+/* User Management */
+/* User Card */
+.card-user .bg_img_on_create_user_card{
+    height: 100px !important;
+}
+.card-user .bg_img_on_create_user_card img {
+    border-radius: 0px !important;
+}
+.card-user .user_image_div{
+    text-align: center;
+    text-transform: none;
+    margin-top: -100px;
+}
+.card .avatar_new {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.card-user .avatar_new {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #FFFFFF;
+    position: relative;
+}
+
+/* violation entry */
+.search_student_input{
+    height: 60px;
+    width: 100%;
+    border-radius: 30px;
+    border: 0px;   
+    transition: box-shadow .3s;
+    font-size: 14px !important;
+}
+.search_student_input:focus,
+.search_student_input:hover{
+    border: 0px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important
+}
+
+.student_list_div{
+    align-items: left;
+    vertical-align: middle;
+}
+.student_image_div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    display: inline-block;
+}
+.student_image_div img.student_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.student_details_div{
+    display: block;
+    align-items: left;
+    line-height: 7px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+p.student_name_txt{
+    font-size: 16px;
+    font-weight: bold !important;
+    color: #414449 !important;
+}
+p.student_number_txt{
+    margin-bottom: 0px !important;
+}
+
+    /* Violation Form */
+    .student_details_card{
+        background-color: #FFE6E7 !important;
+        border-radius: 12px !important;
+        /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important; */
+    }
+    .form_title_div{
+        text-align: center !important;
+        line-height: 25px !important;
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+    }
+    p.DSAS_txt{
+        font-weight: bold !important;
+        font-size: 15px !important;
+        margin: 0px;
+    }
+    p.SDU_txt{
+        font-weight: normal !important;
+        font-size: 16px !important;
+        color: #6c757d !important;
+        margin: 0px;
+    }
+    p.violation_form_txt{
+        font-size: 20px !important;
+        font-weight: bold !important;
+        margin-top: 10px;
+    }
+    .student_img_div_modal{
+        width: 70px;
+        height: 70px;
+        max-width: 70px;
+        max-height: 70px;
+        min-width: 70px;
+        max-height: 70px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-position: center center;
+        background-size: cover;
+        background-repeat:no-repeat;
+        display: inline-block;
+    }
+    .student_img_div_modal .student_img_modal{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .student_details_div_modal{
+        display: block;
+        align-items: left;
+        line-height: 7px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+    p.student_id_txt_modal{
+        font-size: 14px !important;
+        font-weight: 500 !important;
+        color: black !important;
+    }
+    p.student_name_txt_modal{
+        font-size: 16px !important;
+        font-weight: bold !important;
+        text-transform: uppercase !important;
+    }
+    p.student_details_txt_modal{
+        color: #6c757d !important;
+        margin: 0px !important;
+    }
+    p.student_violation_count{
+        color: #BD171B !important;
+        font-weight: 10px !important;
+        font-style: italic;
+    }
+    p.minor_offenses_txt{
+        font-size: 14px !important;
+        font-weight: bold;
+    }
+    /* checkbox */
+    label.cb_label{
+        padding-top: 2px !important;
+    }
+
+
+/* Media Queries */
+@media only screen and (max-width: 500px) {
+    .short_svms_text{
+        display: block !important;
+    }
+    .span_svms_text{
+        display: none !important;
+    }
+}
+
+
