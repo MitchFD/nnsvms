@@ -79,7 +79,7 @@
                             <div class="form-group">
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox" name="pda" class="custom-control-input circle_cb" id="minorViolation7">
-                                    <label class="custom-control-label cb_label" for="minorViolation7">Indecent Public Display of Affection</label>
+                                    <label class="custom-control-label cb_label" for="minorViolation7">Indecent Public Display of Affection</label> 
                                 </div>
                             </div>
                         </div>
