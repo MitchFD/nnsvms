@@ -1,6 +1,6 @@
 @extends('layouts.app', [
     'class' => 'login-page',
-    'backgroundImagePath' => 'img/bg/fabio-mangione.jpg'
+    'backgroundImagePath' => 'img/bg/jan-sendereks.jpg'
 ])
 
 @section('content')
@@ -13,18 +13,17 @@
                         <div class="card-header ">
                             <div class="card-header text-center">
                                 <img class="mb-3 login_logo" src="{{ asset('paper') }}/img/svms/svms_logo_w_text.svg" alt="SVMS Logo">
-                                <p>Users Login Information</p>
+                                <p class="uli_text">Users Login Information</p>
                             </div>
                         </div>
-                        <div class="card-body ">
-
+                        <div class="card-body text-center">
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">
                                         <i class="nc-icon nc-single-02"></i>
                                     </span>
                                 </div>
-                                <input class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ __('Email') }}" type="email" name="email" value="{{ old('email') }}" required autofocus>
+                                <input class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ __('Enter Email') }}" type="email" name="email" value="{{ old('email') }}" required autofocus>
                                 
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback" style="display: block;" role="alert">
@@ -32,14 +31,13 @@
                                     </span>
                                 @endif
                             </div>
-
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">
                                         <i class="nc-icon nc-key-25"></i>
                                     </span>
                                 </div>
-                                <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="{{ __('Password') }}" type="password" required>
+                                <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="{{ __('Enter Password') }}" type="password" required>
                                 
                                 @if ($errors->has('password'))
                                     <span class="invalid-feedback" style="display: block;" role="alert">
@@ -48,7 +46,11 @@
                                 @endif
                             </div>
 
-                            <div class="form-group">
+                            <a href="{{ route('password.request') }}" class="mt-3 forgot_password_link">
+                                {{ __('Forgot password?') }}
+                            </a>
+
+                            {{-- <div class="form-group text-center">
                                 <div class="form-check">
                                      <label class="form-check-label">
                                         <input class="form-check-input" name="remember" type="checkbox" value="" {{ old('remember') ? 'checked' : '' }}>
@@ -56,12 +58,12 @@
                                         {{ __('Remember me') }}
                                     </label>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
 
                         <div class="card-footer">
                             <div class="text-center">
-                                <button type="submit" class="btn btn-sdca btn-round btn-block mb-3">{{ __('Login') }}</button>
+                                <button type="submit" class="btn btn-sdca btn-round btn-block shadow">{{ __('Login') }}</button>
                             </div>
                         </div>
                     </div>
@@ -78,9 +80,9 @@
 @endsection
 
 @push('scripts')
-    <script>
+    {{-- <script>
         $(document).ready(function() {
             demo.checkFullPageBackgroundImage();
         });
-    </script>
+    </script> --}}
 @endpush

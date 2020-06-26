@@ -46,7 +46,7 @@
                     </div>
                     <div class="card-body">
                         <div class="author">
-                            <div class="user_image_div mb-4 mx-auto">
+                            <div class="user_image_div mb-4 mx-auto shadow">
                                 <img class="img_user_image img-fluid" src="storage/user_images/{{ auth()->user()->user_image }}" alt="">
                             </div>
                             <button class="btn btn-round shadow btn-sdca user_image_btn" data-toggle="modal" data-target="#userEditProfileModal">
@@ -57,10 +57,10 @@
                                 <i class="fa fa-pencil m-0 p-0"></i>
                             </button> --}}
 
-                            <h5 class="title mb-1">{{ __(auth()->user()->first_name)}} {{ __(auth()->user()->last_name)}}</h5>
+                            <h5 class="title mb-1">{{ __(auth()->user()->user_first_name)}} {{ __(auth()->user()->user_last_name)}}</h5>
                             <h6 class="font-weight-normal text-uppercase text-muted mb-4">{{ __(auth()->user()->user_description)}}</h6>
                             <p class="font-weight-bold text_sdca mb-0">Employee ID</p>
-                            <p class="mb-4 font-weight-bold text-muted">{{ __(auth()->user()->employee_id) }}</p>
+                            <p class="mb-4 font-weight-bold text-muted emp_id_text">{{ __(auth()->user()->user_employee_id) }}</p>
                             <p class="font-weight-bold text_sdca mb-0">System {{ __(auth()->user()->user_role)}}</p>
                             <p class="text-muted">{{ __(auth()->user()->email) }}</p>
                         </div>
@@ -119,7 +119,7 @@
                         <div class="card-footer">
                             <div class="row my-2">
                                 <div class="col-md-12 text-center">
-                                    <button type="submit" class="btn btn-outline-info btn-round shadow">{{ __('Save Changes') }}</button>
+                                    <button type="submit" class="btn btn-svms-blue btn-round shadow"><i class="nc-icon nc-share-66 mr-2 font-weight-bold"></i>{{ __('Save Changes') }}</button>
                                 </div>
                             </div>
                         </div>
@@ -136,7 +136,7 @@
                     <div class="card-body px-0 pt-0">
                         <div class="table-responsive user_activity_table_div">
                             <table class="table table-hover">
-                                <thead class="text-primary thead-dark position-sticky">
+                                <thead class="text-primary thead-svms-blue position-sticky">
                                     <th class="th_left">{{ __('Process Type') }}</th>
                                     <th class="th_left">{{ __('Description') }}</th>
                                     <th class="th_left">{{ __('Date/Time') }}</th>
@@ -395,11 +395,11 @@
                                     <label class="col-md-3 col-form-label">{{ __('Last Name') }}</label>
                                     <div class="col-md-9">
                                         <div class="form-group">
-                                            <input type="text" name="last_name" class="form-control" placeholder="Last Name" value="{{ auth()->user()->last_name }}" required>
+                                            <input type="text" name="user_last_name" class="form-control" placeholder="Last Name" value="{{ auth()->user()->user_last_name }}" required>
                                         </div>
-                                        @if ($errors->has('last_name'))
+                                        @if ($errors->has('user_last_name'))
                                         <span class="invalid-feedback" style="display: block;" role="alert">
-                                            <strong>{{ $errors->first('last_name') }}</strong>
+                                            <strong>{{ $errors->first('user_last_name') }}</strong>
                                         </span>
                                         @endif
                                     </div>
@@ -408,11 +408,11 @@
                                     <label class="col-md-3 col-form-label">{{ __('First Name') }}</label>
                                     <div class="col-md-9">
                                         <div class="form-group">
-                                            <input type="text" name="first_name" class="form-control" placeholder="First Name" value="{{ auth()->user()->first_name }}" required>
+                                            <input type="text" name="user_first_name" class="form-control" placeholder="First Name" value="{{ auth()->user()->user_first_name }}" required>
                                         </div>
-                                        @if ($errors->has('first_name'))
+                                        @if ($errors->has('user_first_name'))
                                         <span class="invalid-feedback" style="display: block;" role="alert">
-                                            <strong>{{ $errors->first('first_name') }}</strong>
+                                            <strong>{{ $errors->first('user_first_name') }}</strong>
                                         </span>
                                         @endif
                                     </div>
@@ -421,11 +421,11 @@
                                     <label class="col-md-3 col-form-label">{{ __('Employee ID') }}</label>
                                     <div class="col-md-9">
                                         <div class="form-group">
-                                            <input type="text" name="employee_id" class="form-control" placeholder="Employee ID" value="{{ auth()->user()->employee_id }}" required>
+                                            <input type="text" name="user_employee_id" class="form-control" placeholder="Employee ID" value="{{ auth()->user()->user_employee_id }}" required>
                                         </div>
-                                        @if ($errors->has('employee_id'))
+                                        @if ($errors->has('user_employee_id'))
                                         <span class="invalid-feedback" style="display: block;" role="alert">
-                                            <strong>{{ $errors->first('employee_id') }}</strong>
+                                            <strong>{{ $errors->first('user_employee_id') }}</strong>
                                         </span>
                                         @endif
                                     </div>

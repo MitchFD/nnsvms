@@ -15,12 +15,20 @@ class Users extends Model
      *
      * @var array
      */
-    protected $table = 'users';
+    protected $table = 'users_tbl';
     protected $fillable = [
-        'last_name', 'first_name', 'employee_id', 'user_description', 'user_image', 'email', 'password', 'user_role',
+        'username', 
+        'user_last_name', 
+        'user_first_name', 
+        'user_employee_id',
+        'user_description', 
+        'user_role',
+        'user_image', 
+        'email', 
+        'password',
     ];
     public $primaryKey = 'id';
-    public $timestamps = true; 
+    public $timestamps = false; 
 
     /**
      * The attributes that should be hidden for arrays.

@@ -44,24 +44,19 @@ class ProfileController extends Controller
             // upload public/storage/user-image
             $path = $request->file('user_image')->storeAs('public/user_images', $fileNameToStore);
         } 
+
+        $request = new Profile();
+        $request->user_last_name    = $request->input('user_last_name');
+        $request->user_first_name   = $request->input('user_first_name');
+        $request->user_employee_id  = $request->input('user_employee_id');
+        $request->user_description  = $request->input('user_description');
+        $request->user_role         = $request->input('user_role');
         if($request->hasFile('user_image')){
-                $request->user_image = $fileNameToStore;
-        }
+            $request->user_image = $fileNameToStore;
+        };
+        $request->email             = $request->input('email');
 
         auth()->user()->update($request->all());
-            
-        
-        // $register = new Profile;
-        // $register->last_name        = $request->input('last_name');
-        // $register->first_name       = $request->input('first_name');
-        // $register->employee_id      = $request->input('employee_id');
-        // $register->user_description = $request->input('user_description');
-        // $register->user_role        = $request->input('user_role');
-        // if($request->hasFile('user_image')){
-        //     $register->user_image = $fileNameToStore;
-        // }
-        // $register->email            = $request->input('email');
-        // $register->save();
         return back()->withStatus(__('Profile successfully updated.'));
     }
 

@@ -13,9 +13,9 @@
         </div>
         <div class="dropdown">
             <a class="nav-link dropdown-toggle align-middle" href="#" id="userDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="storage/user_images/{{ auth()->user()->user_image }}" alt="User Image" class="user_image_circle_small mr-2 shadow">
+                <img src="storage/user_images/{{ auth()->user()->user_image }}" alt="..." class="user_image_circle_small mr-2 shadow">
                 <p>
-                    <span class="d-md-block mr-2 ">{{ __(auth()->user()->first_name)}} {{ __(auth()->user()->last_name)}}</span>
+                    <span class="d-md-block mr-2 ">{{ __(auth()->user()->user_first_name)}} {{ __(auth()->user()->user_last_name)}}</span>
                 </p>
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropDown" style="position:absolute">

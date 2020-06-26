@@ -5,6 +5,23 @@ a.text_sdca:hover {
   color: #BD171B !important;
 }
 
+.uli_text{
+    font-size: 16px;
+    color: #2F2E41;
+}
+.forgot_password_link{
+    text-decoration: none;
+    color: #686875;
+}
+.forgot_password_link:hover{
+    color: #2F2E41;
+    text-decoration: none;
+}
+
+.dir_slash{
+
+}
+
 /* Card */
 .br_radius_bl{
     border-bottom-left-radius: 12px !important;
@@ -23,6 +40,26 @@ a.text_sdca:hover {
     border-bottom-left-radius: 12px !important;
 }
 
+.card_title{
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2F2E41;
+}
+.card_sub_title{
+    font-size: 16px;
+    line-height: 25px;
+}
+
+a.return_back_link{
+    text-decoration: none !important;
+    color: #2F2E41;
+}
+a.return_back_link:hover,
+a.return_back_link:focus{
+    color: #464555;
+}
+
 /* Login page */
 .login_logo{
     width: auto !important;
@@ -35,6 +72,44 @@ a.sdca_link{
 .btn-sdca {
     background-color: #BD171B;
     color: #fff;    
+}
+
+/* Dashboard */
+.department_text{
+    font-size: 20px;
+    color: #2F2E41;
+}
+.violators_count_div{
+    line-height: 30px;
+}
+.violators_count{
+    font-size: 35px;
+    color: #BD171B;
+    font-weight: bold;
+    margin: 0px;
+}
+.violators_text{
+    font-size: 16px;
+    color: #BD171B !important;
+}
+.top_violators{
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px !important;
+    background-color: #f8f9fa;
+}
+.top_violator_student_div{
+    display: block;
+    align-items: left;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.student_offense_count{
+    font-size: 14px;
+    color: #fff !important
 }
 
 /* User Profile */
@@ -50,6 +125,9 @@ a.sdca_link{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+    }
+    .emp_id_text{
+        font-size: 16px;
     }
     /* Image Tag */
     .user_image_div .img_user_image{
@@ -298,20 +376,100 @@ td.td_left{
 }
 
 /* violation entry */
-.search_student_input{
-    height: 60px;
-    width: 100%;
-    border-radius: 30px;
-    border: 0px;   
-    transition: box-shadow .3s;
-    font-size: 14px !important;
+.notice_card{
+    display: flex;
+    flex-wrap: nowrap;
 }
-.search_student_input:focus,
+.notice_div{
+    margin: 30px 0px 0px 30px !important;
+    line-height: normal;
+    vertical-align: middle;
+    width: 800px;
+}
+p.date_today_txt{
+    margin: 0px;
+    font-size: 25px;
+    color: #343a40;
+}
+p.day_today_txt{
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2F2E41;
+}
+p.announcement_txt{
+    font-size: 16px;
+    line-height: 25px;
+}
+div.illustration_div{
+    margin-left: auto !important;
+    margin-right: 0px !important;
+}
+img.illustration_search_student{
+    height: 330px !important;
+    width: auto;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-size: cover;
+}
+div.illustration_no_match_found{
+    height: 100px !important;
+    width: auto;
+    background-image: url('/paper/illustrations/no_match_found.jpg');
+    background-repeat: no-repeat;
+}
+.search_student_input{
+    height: 70px;
+    width: 100%;
+    border-radius: 40px;
+    border: 0px;   
+    transition: .3s;
+    font-size: 18px !important;
+    background-color: #F8E7E7;
+    border: 2px solid #F8E7E7;
+    color: #2f2e41 !important;
+}
+.search_student_input:focus{
+    border: 2px solid #DE8B8D;
+}
 .search_student_input:hover{
-    border: 0px;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important
 }
-
+.search_student_input::placeholder{
+    color: #BD171B !important;
+}
+.violationFormStudent:hover{
+    background-color: #f8f9fa;
+    box-shadow: none;
+    text-decoration: none !important;
+}
+.display_search_div{
+    padding-left: 30px;
+}
+.no_result_found a{
+    box-shadow: none !important;
+    border: 0px !important;
+    background-color: #fff !important;
+    border-radius: 12px !important;
+}
+.no_result_found a:hover,
+.no_result_found a:focus{
+    background-color: #fff !important;
+}
+.no_result_found div{
+    box-shadow: none !important;
+    border: 0px !important;
+    background-color: #fff !important;
+    border-radius: 12px !important;
+}
+.violationFormStudent{
+    border-radius: 0px !important;
+    border: 0px;
+    border-bottom: 1px solid #f4f3ef !important;
+}
+.violationFormStudent:hover{
+    background-color: #F8E7E7;
+}
 .student_list_div{
     align-items: left;
     vertical-align: middle;
@@ -350,30 +508,66 @@ p.student_number_txt{
 }
 
     /* Violation Form */
+    .modal_w{
+        width: 1000px;
+    }
+    .modal-xl{
+        width: 1140px;
+    }
     .student_details_card{
         background-color: #FFE6E7 !important;
         border-radius: 12px !important;
-        /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important; */
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+    }
+    .violation_date{
+        background-color: #2F2E41 !important;
+        border-radius: 12px;
+        line-height: 30px;
+        color: #fff !important;
+    }
+    .text-lighter{
+        color: #C4C4C4 !important
+    }
+    .violation_date p{
+        margin: 0px !important;
+    }
+    .img_card{
+        min-height: 370px !important;
+        max-height: 370px !important;
+        max-width: 100%;
+        overflow: hidden;
+        background-position: center center;
+        background-size: cover;
+        background-repeat:no-repeat;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .offenses_div{
+        background-color: #F7E2E3;
+        border-radius: 12px;
     }
     .student_offenses_card{
-        background-color: #f8f9fa !important;
+        background-color: #fff !important;
         border-radius: 12px !important;
+        padding: 20px !important;
     }
     .form_title_div{
         text-align: center !important;
         line-height: 25px !important;
-        margin-top: 15px !important;
         margin-bottom: 15px !important;
     }
     p.DSAS_txt{
-        font-weight: bold !important;
+        font-weight: normal !important;
         font-size: 15px !important;
         margin: 0px;
+        color: #484758 !important;
     }
     p.SDU_txt{
-        font-weight: normal !important;
-        font-size: 16px !important;
-        color: #6c757d !important;
+        font-weight: bold !important;
+        font-size: 20px !important;
+        color: #2F2E41 !important;
         margin: 0px;
     }
     p.violation_form_txt{
@@ -401,21 +595,22 @@ p.student_number_txt{
         object-fit: cover;
     }
     .student_details_div_modal{
+        height: auto;
         display: block;
         align-items: left;
-        line-height: 7px;
+        line-height: 12px;
         display: flex;
         justify-content: center;
         align-content: center;
         flex-direction: column;
     }
     p.student_id_txt_modal{
-        font-size: 14px !important;
+        font-size: 16px !important;
         font-weight: 500 !important;
         color: black !important;
     }
     p.student_name_txt_modal{
-        font-size: 16px !important;
+        font-size: 18px !important;
         font-weight: bold !important;
         text-transform: uppercase !important;
     }
@@ -429,15 +624,24 @@ p.student_number_txt{
         font-style: italic;
     }
     .offense_title{
+        color: #BD171B;
         font-size: 14px !important;
         font-weight: bold;
         text-transform: uppercase !important;
+    }
+    .other_offense_txt_area{
+        border: 0px !important;
+    }
+    .other_offense_txt_area:hover,
+    .other_offense_txt_area:focus{
+        border: 1px solid #BD171B;
     }
     /* checkbox */
     label.cb_label{
         padding-top: 2px !important;
     }
-    p.recorded_by_txt{
+    p.recorded_by_txt,
+    p.recorded_date_txt{
         font-size: 12px !important;
         font-style: italic;
         margin-bottom: 0px !important;
@@ -449,14 +653,94 @@ p.student_number_txt{
             -ms-flex-align: center;
                 align-items: center;
     }
+    p.recorded_date_txt{
+        font-style: normal !important;
+    }
+    .v_btn{
+        font-size: 14px !important;
+    }
+
+/* violation records */
+.main_card{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.vr_card_footer{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+div.illustration_div{
+    margin-left: auto !important;
+    margin-right: 0px !important;
+}
+img.illustration_violation_records{
+    height: 300px !important;
+    width: auto;
+    margin-top: -70px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-size: cover;
+}
+.violation_records_table,
+.violation_records_table table{
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+    overflow: hidden;
+}
+.violation_records_table table tbody tr{
+    border-top: 1px solid #EBEBED;
+    border-bottom: 1px solid #EBEBED;
+}
+.violation_record_table_div{
+    overflow-y: auto !important;
+    overflow-x:  auto;
+    -webkit-overflow-scrolling: touch !important;
+    height: auto;
+    min-height: auto;
+    max-height: 500px !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #F4F4F5;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.violation_record_table_div thead th{
+    position: sticky;
+    top: 0;
+}
+.vr_no_available_data{
+    height: 120px;
+    width: auto;
+}
+.violation_records_table table tbody tr{
+    cursor: pointer !important;
+}
+.vr_total_records_div{
+    padding: 13px !important;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #242333;
+    background-color: #F4F4F5 !important;
+}
 
 
 /* Media Queries */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 576px) {
     .short_svms_text{
         display: block !important;
     }
     .span_svms_text{
+        display: none !important;
+    }
+    .display_search_div{
+        padding-right: 30px;
+    }
+    .notice_div{
+        margin: 30px !important;
+    }
+    .illustration_div{
         display: none !important;
     }
 }

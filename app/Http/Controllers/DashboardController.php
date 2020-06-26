@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
-class HomeController extends Controller
+use App\Violation;
+use Illuminate\Http\Request;
+
+class DashboardController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -21,6 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('violation_entry.index');
+        // get all violation records from Violation Model
+        $violation = Violation::all();
+        return view('dashboard.index')->with('violation', $violation);
     }
 }

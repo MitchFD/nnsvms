@@ -26,15 +26,15 @@ class RegisterRequest extends FormRequest
     public function rules()
     {
         return [
-            'last_name'   => 'required',
-            'first_name'  => 'required',
-            'employee_id' => 'required',
+            'user_last_name'   => 'required',
+            'user_first_name'  => 'required',
+            'user_employee_id' => 'required',
             'user_description' => 'required',
-            'name' => ['required', 'min:3'],
-            'email' => ['required', 'email'],
-            'password'    => ['required', 'min:6'],
-            'user_role'   => 'required',
-            'user_image'  => 'image|nullable|max:1999',
+            'user_role'        =>  'required',
+            'user_image'       => 'image|nullable|max:1999',
+            'email'            => ['required', 'email'],
+            'password'         => ['required', 'min:6'],
+            
         ];
     }
 }

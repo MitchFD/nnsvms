@@ -1058,6 +1058,7 @@ fieldset[disabled] .btn-sdca:active,
 fieldset[disabled] .btn-sdca.active {
   background-color: #BD171B;
   border-color: #BD171B;
+  color: #fff;
 }
 
 .btn-sdca.btn-simple {
@@ -1084,6 +1085,87 @@ fieldset[disabled] .btn-sdca.active {
 .btn-sdca.btn-link:active:focus {
   background-color: transparent;
   color: #9B060A;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.btn-svms-blue {
+  background-color: #2F2E41;
+  color: #FFFFFF;
+}
+
+.btn-svms-blue:hover,
+.btn-svms-blue:focus,
+.btn-svms-blue:active,
+.btn-svms-blue.active,
+.btn-svms-blue:active:focus,
+.btn-svms-blue:active:hover,
+.btn-svms-blue.active:focus,
+.btn-svms-blue.active:hover,
+.show>.btn-svms-blue.dropdown-toggle,
+.show>.btn-svms-blue.dropdown-toggle:focus,
+.show>.btn-svms-blue.dropdown-toggle:hover {
+  background-color: #282737 !important;
+  color: #FFFFFF !important;
+  box-shadow: none !important;
+}
+
+.btn-svms-blue:not([data-action]):hover {
+  box-shadow: none;
+}
+
+.btn-svms-blue.disabled,
+.btn-svms-blue.disabled:hover,
+.btn-svms-blue.disabled:focus,
+.btn-svms-blue.disabled.focus,
+.btn-svms-blue.disabled:active,
+.btn-svms-blue.disabled.active,
+.btn-svms-blue:disabled,
+.btn-svms-blue:disabled:hover,
+.btn-svms-blue:disabled:focus,
+.btn-svms-blue:disabled.focus,
+.btn-svms-blue:disabled:active,
+.btn-svms-blue:disabled.active,
+.btn-svms-blue[disabled],
+.btn-svms-blue[disabled]:hover,
+.btn-svms-blue[disabled]:focus,
+.btn-svms-blue[disabled].focus,
+.btn-svms-blue[disabled]:active,
+.btn-svms-blue[disabled].active,
+fieldset[disabled] .btn-svms-blue,
+fieldset[disabled] .btn-svms-blue:hover,
+fieldset[disabled] .btn-svms-blue:focus,
+fieldset[disabled] .btn-svms-blue.focus,
+fieldset[disabled] .btn-svms-blue:active,
+fieldset[disabled] .btn-svms-blue.active {
+  background-color: #2F2E41;
+  border-color: #2F2E41;
+}
+
+.btn-svms-blue.btn-simple {
+  color: #2F2E41;
+  border-color: #2F2E41;
+}
+
+.btn-svms-blue.btn-simple:hover,
+.btn-svms-blue.btn-simple:focus,
+.btn-svms-blue.btn-simple:active {
+  background-color: transparent;
+  color: #282737;
+  border-color: #282737;
+  box-shadow: none;
+}
+
+.btn-svms-blue.btn-link {
+  color: #2F2E41;
+}
+
+.btn-svms-blue.btn-link:hover,
+.btn-svms-blue.btn-link:focus,
+.btn-svms-blue.btn-link:active,
+.btn-svms-blue.btn-link:active:focus {
+  background-color: transparent;
+  color: #282737;
   text-decoration: none;
   box-shadow: none;
 }
@@ -1529,6 +1611,66 @@ fieldset[disabled] .btn-outline-sdca.active {
   border-color: #BD171B !important;
 }
 
+.btn-outline-sdca-blue {
+  background: transparent;
+  border: 2px solid #2F2E41 !important;
+  color: #2F2E41;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.btn-outline-sdca-blue:hover,
+.btn-outline-sdca-blue:focus,
+.btn-outline-sdca-blue:active,
+.btn-outline-sdca-blue:focus:active,
+.btn-outline-sdca-blue.active,
+.open>.btn-outline-sdca-blue.dropdown-toggle {
+  background-color: #2F2E41 !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  border-color: #2F2E41 !important;
+}
+
+.btn-outline-sdca-blue:hover .caret,
+.btn-outline-sdca-blue:focus .caret,
+.btn-outline-sdca-blue:active .caret,
+.btn-outline-sdca-blue:focus:active .caret,
+.btn-outline-sdca-blue.active .caret,
+.open>.btn-outline-sdca-blue.dropdown-toggle .caret {
+  border-top-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.btn-outline-sdca-blue .caret {
+  border-top-color: #FFFFFF !important;
+}
+
+.btn-outline-sdca-blue.disabled,
+.btn-outline-sdca-blue.disabled:hover,
+.btn-outline-sdca-blue.disabled:focus,
+.btn-outline-sdca-blue.disabled.focus,
+.btn-outline-sdca-blue.disabled:active,
+.btn-outline-sdca-blue.disabled.active,
+.btn-outline-sdca-blue:disabled,
+.btn-outline-sdca-blue:disabled:hover,
+.btn-outline-sdca-blue:disabled:focus,
+.btn-outline-sdca-blue:disabled.focus,
+.btn-outline-sdca-blue:disabled:active,
+.btn-outline-sdca-blue:disabled.active,
+.btn-outline-sdca-blue[disabled],
+.btn-outline-sdca-blue[disabled]:hover,
+.btn-outline-sdca-blue[disabled]:focus,
+.btn-outline-sdca-blue[disabled].focus,
+.btn-outline-sdca-blue[disabled]:active,
+.btn-outline-sdca-blue[disabled].active,
+fieldset[disabled] .btn-outline-sdca-blue,
+fieldset[disabled] .btn-outline-sdca-blue:hover,
+fieldset[disabled] .btn-outline-sdca-blue:focus,
+fieldset[disabled] .btn-outline-sdca-blue.focus,
+fieldset[disabled] .btn-outline-sdca-blue:active,
+fieldset[disabled] .btn-outline-sdca-blue.active {
+  background-color: transparent !important;
+  border-color: #2F2E41 !important;
+}
+
 .btn-outline-danger {
   background: transparent;
   border: 2px solid #ef8157 !important;
@@ -1751,6 +1893,17 @@ fieldset[disabled] .btn-neutral.active {
 .btn-neutral.btn-sdca:active,
 .btn-neutral.btn-sdca:active:focus {
   color: #9B060A !important;
+}
+
+.btn-neutral.btn-svms-blue {
+  color: #2F2E41 !important;
+}
+
+.btn-neutral.btn-svms-blue:hover,
+.btn-neutral.btn-svms-blue:focus,
+.btn-neutral.btn-svms-blue:active,
+.btn-neutral.btn-svms-blue:active:focus {
+  color: #282737 !important;
 }
 
 .btn-neutral.btn-success {
@@ -2919,10 +3072,14 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
   background-color: #fbc658;
 }
 
-
 .badge.badge-danger {
   border-color: #ef8157;
   background-color: #ef8157;
+}
+
+.badge.badge-sdca {
+  border-color: #BD171B;
+  background-color: #BD171B;
 }
 
 .badge.badge-neutral {
@@ -5183,16 +5340,17 @@ License - nucleoapp.com/license/
   opacity: .4;
 }
 
-.sidebar[data-color="black"]:after,
-.off-canvas-sidebar[data-color="black"]:after {
-  background: #212120;
-}
-
-/* sdca blue */
+/* original */
 /* .sidebar[data-color="black"]:after,
 .off-canvas-sidebar[data-color="black"]:after {
-  background: #242333;
+  background: #212120;
 } */
+
+/* sdca blue */
+.sidebar[data-color="black"]:after,
+.off-canvas-sidebar[data-color="black"]:after {
+  background: #242333;
+}
 
 
 .sidebar[data-active-color="primary"] .nav li.active>a,

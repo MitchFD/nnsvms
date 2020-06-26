@@ -18,7 +18,7 @@
                 </a>
             </li>
             <li class="{{ $elementActive == 'dashboard' ? 'active' : '' }}">
-                <a href="{{ route('page.index', 'dashboard') }}">
+                <a href="{{ route('dashboard') }}">
                     <i class="nc-icon nc-layout-11"></i>
                     <p>{{ __('Dashboard') }}</p>
                 </a>
@@ -29,8 +29,14 @@
                     <p>{{ __('Violation Entry') }}</p>
                 </a>
             </li>
-            <li class="{{ $elementActive == 'violation_records' ? 'active' : '' }}">
+            {{-- <li class="{{ $elementActive == 'violation_records' ? 'active' : '' }}">
                 <a href="{{ route('page.index', 'violation_records') }}">
+                    <i class="nc-icon nc-bullet-list-67"></i>
+                    <p>{{ __('Violation Records') }}</p>
+                </a>
+            </li> --}}
+            <li class="{{ $elementActive == 'violation_records' ? 'active' : '' }}">
+                <a href="{{ route('violation_records') }}">
                     <i class="nc-icon nc-bullet-list-67"></i>
                     <p>{{ __('Violation Records') }}</p>
                 </a>
@@ -78,24 +84,24 @@
                     <p>{{ __('Icons') }}</p>
                 </a>
             </li>
-            <li class="{{ $elementActive == 'map' ? 'active' : '' }}">
+            {{-- <li class="{{ $elementActive == 'map' ? 'active' : '' }}">
                 <a href="{{ route('page.index', 'map') }}">
                     <i class="nc-icon nc-pin-3"></i>
                     <p>{{ __('Maps') }}</p>
                 </a>
-            </li>
+            </li> --}}
             <li class="{{ $elementActive == 'notifications' ? 'active' : '' }}">
                 <a href="{{ route('page.index', 'notifications') }}">
                     <i class="nc-icon nc-bell-55"></i>
                     <p>{{ __('Notifications') }}</p>
                 </a>
             </li>
-            <li class="{{ $elementActive == 'tables' ? 'active' : '' }}">
+            {{-- <li class="{{ $elementActive == 'tables' ? 'active' : '' }}">
                 <a href="{{ route('page.index', 'tables') }}">
                     <i class="nc-icon nc-tile-56"></i>
                     <p>{{ __('Table List') }}</p>
                 </a>
-            </li>
+            </li> --}}
             <li class="{{ $elementActive == 'typography' ? 'active' : '' }}">
                 <a href="{{ route('page.index', 'typography') }}">
                     <i class="nc-icon nc-caps-small"></i>
@@ -106,6 +112,12 @@
                 <a href="{{ route('page.index', 'upgrade') }}">
                     <i class="nc-icon nc-spaceship text-white"></i>
                     <p class="text-white">{{ __('Upgrade to PRO') }}</p>
+                </a>
+            </li> --}}
+            {{-- <li class="active-pro">
+                <a href="{{ route('logout') }}">
+                    <i class="nc-icon nc-minimal-left"></i>
+                    <p>{{ __('Logout') }}</p>
                 </a>
             </li> --}}
         </ul>
