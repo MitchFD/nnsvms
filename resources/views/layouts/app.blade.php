@@ -20,8 +20,8 @@ The above copyright notice and this permission notice shall be included in all c
 
 <head>
     <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('paper') }}/img/svms/svms_logo_outline.svg">
-    <link rel="icon" type="image/png" href="{{ asset('paper') }}/img/svms/svms_logo_outline.svg">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('paper') }}/img/svms/svms_logo_light_outline.svg">
+    <link rel="icon" type="image/png" href="{{ asset('paper') }}/img/svms/svms_logo_light_outline.svg">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <!-- Extras -->

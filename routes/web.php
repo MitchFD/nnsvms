@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', function () {
-    return view('users_login_information');
+    return view('auth/login');
 });
 
 Auth::routes();
@@ -37,10 +37,12 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
 });
 
-// Users Group
+// Users Management Group
 Route::group(['middleware' => 'auth'], function(){
-	Route::get('users', ['as' => 'users.index', 'uses' => 'UsersController@index']);
+	Route::get('users_management', ['as' => 'users_management', 'uses' => 'UsersController@index']);
 	Route::put('users/create', ['as' => 'users.create', 'uses' => 'UsersController@create']);
+	Route::get('users_management/user/{user_id}', ['as' => 'users_management.user', 'uses' => 'UsersController@user']);
+	Route::put('users/create_user_role', ['as' => 'users.create_user_role', 'uses' => 'UsersController@create_user_role']);
 	// Route::get('users/user_management/', ['as' => 'users.show', 'uses' => 'UsersController@show']);
 });
 
@@ -60,7 +62,12 @@ Route::group(['middleware' => 'auth'], function(){
 // Violation Records Group
 Route::group(['middleware' => 'auth'], function(){
 	Route::get('violation_records', ['as' => 'violation_records', 'uses' => 'ViolationRecordsController@index']);
-	Route::get('violation_records/student/{student_id}', ['as' => 'violation_records/student/{student_id}', 'uses' => 'ViolationRecordsController@student']);
+	Route::get('violation_records/student_records/{student_id}', ['as' => 'student_records', 'uses' => 'ViolationRecordsController@student_records']);
+});
+
+// sanction Group
+Route::group(['middleware' => 'auth'], function(){
+	Route::get('sanction/save', ['as' => 'sanction.save', 'uses' => 'ViolationRecordsController@index']);
 });
 
 // Page Redirects

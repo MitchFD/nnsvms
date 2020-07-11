@@ -1,3 +1,7 @@
+.top_navbar_bg{
+    background-color: #E7E6E4 !important;
+    color: #2F2E41 !important;
+}
 
 .text_sdca,
 a.text_sdca:focus,
@@ -18,11 +22,133 @@ a.text_sdca:hover {
     text-decoration: none;
 }
 
-.dir_slash{
+.margin_x{
+    margin: 0px 16px !important;
+}
 
+/* custom background-colors colors */
+/* light blue background */
+.bg_light_blue{
+    background-color: #F4F4F5 !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+.title_bg_light_blue{
+    font-size: 12px;
+    color: #2F2E41;
+    font-weight: bold;
+    margin: 0px !important;
+    text-transform: uppercase;
+}
+.subtitle_bg_light_blue{
+    font-size: 14px;
+    color: #6c757d;
+    margin: 0px !important;
+    font-style: italic;
+}
+/* light green background */
+.bg_light_green{
+    background-color: #F0FAF5 !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+.title_bg_light_green{
+    font-size: 12px;
+    color: #62BC8B;
+    font-weight: bold;
+    margin: 0px !important;
+    text-transform: uppercase;
+}
+/* light red background */
+.bg_light_red{
+    background-color: #FBF1F1 !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+.title_bg_light_red{
+    font-size: 12px;
+    color: #BD171B;
+    font-weight: bold;
+    margin: 0px !important;
+    text-transform: uppercase;
+}
+.subtitle_bg_light_red{
+    font-size: 13px;
+    color: #D77376;
+    font-weight: normal;
+    margin: 0px !important;
+}
+/* warning text */
+.labelonDisabled_modules{
+    font-size: 14px !important;
+    color: #2F2E41 !important;
+}
+.alert_notice_txt_red{
+    font-size: 12px;
+    font-weight: normal;
+    color: #BD171B !important;
+    line-height: normal !important;
+}
+
+
+/* customized collapse button with chage icon */
+.collapse_btn_txt{
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    color: #2F2E41;
+    text-transform: none;
+    padding: 0px;
+    line-height: 20px;
+
+    display: block;
+    align-items: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.collapse_btn_block{
+    margin: 0px !important;
+    background-color: #ffffff !important;
+    color: #2F2E41 !important; 
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+.collapse_btn_block:hover{
+    background-color: #f8f9fa !important;
+    color: #2F2E41 !important;
+}
+.collapse_btn_block:focus,
+.collapse_btn_block:active,
+.collapse_btn_block:active:focus{
+    background-color: #ffffff !important;
+    color: #2F2E41 !important;
+}
+
+/* red collapse button */
+.collapse_btn_block_red{
+    margin: 0px !important;
+    background-color: #FBF1F1 !important;
+    color: #2F2E41 !important; 
+    border-radius: 12px;
+}
+.collapse_btn_block_red:hover{
+    background-color: #f9eaea !important;
+    color: #2F2E41 !important;
+}
+.collapse_btn_block_red:focus,
+.collapse_btn_block_red:active,
+.collapse_btn_block_red:active:focus{
+    background-color: #FBF1F1 !important;
+    color: #2F2E41 !important;
 }
 
 /* Card */
+.br_radius_all{
+    border-radius: 12px !important;
+    overflow: hidden;
+}
 .br_radius_bl{
     border-bottom-left-radius: 12px !important;
 }
@@ -40,6 +166,26 @@ a.text_sdca:hover {
     border-bottom-left-radius: 12px !important;
 }
 
+.cust_card_padd{
+    padding: 15px 25px !important;
+}
+
+.cust_card_header{
+    padding: 25px 25px 0px 25px !important;
+}
+.cust_card_title{
+    font-size: 25px !important;
+    text-transform: uppercase !important;
+    color: #2F2E41 !important;
+    font-weight: bold;
+    margin: 0px !important;
+    line-height: 10px;
+}
+.cust_card_sub_title{
+    font-size: 15px;
+    color: #6C757D !important;
+}
+
 .card_title{
     font-size: 55px;
     font-weight: bold;
@@ -51,13 +197,17 @@ a.text_sdca:hover {
     line-height: 25px;
 }
 
+/* directory links and texts */
+.dir_link_active{
+    color: #2F2E41;
+}
 a.return_back_link{
     text-decoration: none !important;
-    color: #2F2E41;
+    color: #A5A4AD;
 }
 a.return_back_link:hover,
 a.return_back_link:focus{
-    color: #464555;
+    color: #2F2E41;
 }
 
 /* Login page */
@@ -173,9 +323,9 @@ a.sdca_link{
     }
 
     .imagePreview {
-        width: 180px;
-        height: 180px;
-        border: 5px solid #BD171B;
+        width: 160px;
+        height: 160px;
+        border: 2px solid #2F2E41;
         border-radius: 50%;
         background-color:#fff;
         background-position: center center;
@@ -183,7 +333,7 @@ a.sdca_link{
         background-size: cover;
         background-repeat:no-repeat;
         display: inline-block;
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important
+        /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important */
     }
     .imagePreview .img_user_image{
         width: 100%;
@@ -193,18 +343,22 @@ a.sdca_link{
         background-repeat: no-repeat;
         display: inline-block;
     }
-    .upload_image_btn
-    {
+    .user_upload_image_btn{
         display:block;
-        font-size: 18px !important;
-        height: 45px;
-        width: 45px;
-        padding: auto !important;
+        font-size: 16px !important;
+        height: 50px;
+        width: 50px;
+        padding: 11px !important;
         text-decoration: none;
         position: absolute;
-        border-radius: 50%;
-        margin-left: 170px;
+        border-radius: 25px;
+        margin-left: 280px;
         margin-top: -70px;
+    }
+    .input.uploadFile{
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
     }
 
 /* users */
@@ -232,7 +386,7 @@ a.btn_edit_profile:hover{
 
 /* registered Guards card */
 .bg_darken_gray{
-    background-color: #EBEBEB;
+    background-color: #E7E6E4 !important;
 }
 div.circle_div{
     border-radius: 50%;
@@ -349,6 +503,171 @@ td.td_left{
 }
 
 /* User Management */
+/* list of registered users */
+.registered_users_list_group{
+    border-radius: 12px;
+    overflow: hidden;
+}
+.list_group_cust_border{
+    border: 1px solid #F5F5F5 !important;
+}
+.user_intro_name_txt{
+    font-size: 15px;
+    font-weight: bold;
+    color: #2F2E41 !important;
+}
+.user_intro_role_txt{
+    font-size: 13px;
+    font-weight: normal;
+    color: #6c757d !important;
+}
+.ul_user_list_imgtxt_div{
+    text-align: left;
+    text-transform: none;
+    padding: 0px;
+
+    display: block;
+    align-items: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
+.ul_user_image_div{
+    height: 60px;
+    width: 60px;
+    border: 2px solid #2F2E41;
+    border-radius: 50%;
+    position: relative;
+    background-image: url('/paper/img/user/user_default_image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+.user_imgage_img{
+    height: auto;
+    width: auto;
+}
+.user_intro_div{
+    display: block;
+    align-items: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding-left: 15px;
+}
+.registered_users_count{
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    font-weight: normal;
+    font-size: 13px;
+    color: #6C757D !important;
+}
+.registered_users_count i{
+    font-size: 13px;
+    font-weight: bold;
+}
+/* list of user roles */
+.user_roles_lists{
+    border: 1px solid #F5F5F5 !important;
+    margin: 0px !important;
+    height: auto !important;
+}
+.collapse_disabled_modules{
+    border: 1px solid #f5f5f5 !important;
+    border-radius: 12px;
+    overflow: hidden !important;
+    margin: 0px !important;
+    height: auto !important;
+}
+.custom_collapse_btn_header{
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    color: #2F2E41;
+    text-transform: none;
+
+    display: block;
+    align-items: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding-left: 15px;  
+}
+.user_role_txt{
+    font-size: 15px;
+    font-weight: bold;
+    color: #2F2E41 !important;
+}
+.users_reg_roles_txt{
+    font-size: 13px;
+    font-weight: normal;
+    color: #6c757d !important;
+}
+.user_role_notice_txt{
+    font-size: 12px;
+    font-weight: normal;
+    color: #6c757d !important;
+    line-height: normal !important;
+}
+
+
+.user_role_access_div,
+.user_role_reg_users_div{
+    line-height: 25px;
+}
+.access_control_count{
+    font-size: 12px;
+    color: #62BC8B;
+    font-weight: bold;
+}
+.user_role_reg_users_count{
+    font-size: 12px;
+    color: #2F2E41;
+    font-weight: bold;
+}
+.access_controls_txt{
+    font-size: 14px;
+    color: #242333;
+    margin: 0px !important;
+}
+/* add new user role button */
+.btn_add_userRole{
+    /* background-color: #E7E6E4 !important; */
+    background-color: #D6D6D7 !important;
+    color: #9B99A1; 
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: normal !important;
+    margin: 0px;
+    padding: 10px 12px !important;
+    text-decoration: none !important;
+}
+.btn_add_userRole:hover,
+.btn_add_userRole:focus{
+    background-color: #C9C9C9 !important;
+    color: #595967 !important; 
+}
+.btn_add_userRole:active,
+.btn_add_userRole:active:focus{
+    background-color: #C9C9C9 !important;
+    color: #595967 !important; 
+}
+/* create New User Form */
+.disabled_modules_card{
+    border: 2px solid #F9EAEA !important;
+    margin: 0px !important;
+    height: auto !important;
+    overflow: hidden !important;
+    border-radius: 13px !important;
+}
+
 /* User Card */
 .card-user .bg_img_on_create_user_card{
     height: 100px !important;
@@ -688,6 +1007,7 @@ img.illustration_violation_records{
     border-top-left-radius: 12px !important;
     border-top-right-radius: 12px !important;
     overflow: hidden;
+    border: 0px !important;
 }
 .violation_records_table table tbody tr{
     border-top: 1px solid #EBEBED;
@@ -723,6 +1043,181 @@ img.illustration_violation_records{
     font-weight: normal;
     color: #242333;
     background-color: #F4F4F5 !important;
+}
+
+/* student offense records */
+p.unreg_student_num_txt{
+    font-size: 35px;
+    font-weight: bold;
+    color: #BD171B;
+    margin: 0px !important;
+}
+img.unregistered_student_number_svg{
+    height: 300px;
+    width: auto;
+    margin: 0px -60px 20px 0px !important;
+}
+.total_offenses_bagde{
+    padding: 15px 10px;
+    color: #fff;
+    font-size: 14px;
+}
+.badge.badge-sdca {
+    border-color: #BD171B;
+    background-color: #BD171B;
+}
+.cust_bg_light_grey{
+    background-color: #f5f5f5;
+}
+.sr_no_sanctions_yet{
+    height: 240px;
+    width: auto;
+}
+.sr_no_violations_found{
+    height: 280px;
+    width: auto;
+}
+.offense_total_count{
+    background-color: #BD171B !important;
+    border-radius: 12px;
+    line-height: 30px;
+    color: #fff !important;
+}
+.record_offenses_parent_div{
+    height: auto;
+}
+.card-body .offenses_card{
+    background-color: #fff;
+    border-radius: 12px !important;
+}
+.date_div{
+    line-height: 30px;
+}
+.date_div2{
+    line-height: 25px;
+}
+.offense_card_dropdown_btn{
+    background-color: #fff;
+    color: #CBCACE; 
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: normal !important;
+    margin: 0px;
+    padding: 10px !important;
+    text-decoration: none !important;
+}
+.offense_card_dropdown_btn:hover,
+.offense_card_dropdown_btn:focus,
+.offense_card_dropdown_btn:active,
+.offense_card_dropdown_btn:active:focus{
+    background-color: #F5F5F5 !important;
+    color: #9B99A1 !important; 
+}
+
+.dropdown_menu{
+    background-color: #E7E6E4 !important;
+    color: #9B99A1; 
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: normal !important;
+    margin: 0px;
+    padding: 10px !important;
+    text-decoration: none !important;
+}
+.dropdown_menu:hover,
+.dropdown_menu:focus{
+    background-color: #D6D6D7 !important;
+    color: #2F2E41 !important; 
+}
+.dropdown_menu:active,
+.dropdown_menu:active:focus{
+    background-color: #D6D6D7 !important;
+    color: #2F2E41 !important; 
+}
+
+.offense_day_txt{
+    font-size: 25px;
+    color: #3A384A;
+    font-weight: bold;
+    margin: 0px !important;
+}
+.offense_date_txt{
+    font-size: 14px;
+    color: #888690;
+    margin: 0px !important;
+}
+.offense_card{
+    background-color: #FBF1F1 !important;
+    border-radius: 12px;
+    margin-bottom: 10px !important;
+    padding: 10px 15px !important;
+}
+.offenses_list{
+    line-height: 25px;
+}
+.offense_title_txt{
+    font-size: 12px;
+    color: #BD171B;
+    font-weight: bold;
+    margin: 0px !important;
+    text-transform: uppercase;
+}
+.offense_num_count_txt{
+    font-size: 12px;
+    color: #BD171B;
+    font-weight: bold;
+}
+.offense_txt{
+    font-size: 14px;
+    color: #242333;
+    margin: 0px !important;
+}
+.recorded_by_div{
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    font-size: 13px;
+    color: #C3C2C7 !important;
+}
+.recorded_by_div i{
+    font-size: 12px;
+}
+.user_name{
+    font-style: italic;
+    color: #888690;
+}
+.addInputBtn,
+.removeInputBtn{
+    margin: 0px !important;
+    padding: 11px 15px !important;
+}
+.violation_lists{
+    /* box-shadow: none !important; */
+    border: 1px solid #F5F5F5 !important;
+    margin: 0px !important;
+    height: auto !important;
+}
+.custom_header_collapse{
+    padding: 10px 15px 0px 15px !important;
+}
+.collapse_title{
+    font-size: 16px;
+    color: #3A384A;
+    font-weight: bold;
+    margin: 0px !important;
+}
+.collapse_subtitle{
+    font-size: 14px;
+    color: #888690;
+    margin: 0px !important;
+}
+.custom_modal_body{
+    padding: 15px 0px !important;
+    background-color: #F5F5F5;
 }
 
 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Students;
 use App\Violation;
+use App\Useractivity;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\ViolationRequest;
 use Carbon\Carbon;
@@ -412,6 +413,15 @@ class ViolationEntryController extends Controller
         $violation->student_id            = request('student_id');
         $violation->user_id               = Auth::user()->id;
         $violation->save();
+
+        // $activity = new Useractivity();
+        // $activity->created_at       = now();
+        // $activity->updated_at       = now();
+        // $activity->user_id          = auth()-user()->id;
+        // $activity->activity_type    = "VIOLATION ENTRY";
+        // $activity->affected_key     = $offense_count;
+        // $activity->save();
+
         return back()->withStatus(__('Violation Recorded Successfully.'));
 
         // dd($violation);

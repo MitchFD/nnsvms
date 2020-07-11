@@ -2,7 +2,7 @@
     <div class="logo">
         <a href="#" class="simple-text logo-mini">
             <div class="logo-image-small">
-                <img src="{{ asset('paper') }}/img/svms/svms_logo_outline.svg">
+                <img src="{{ asset('paper') }}/img/svms/svms_logo_light_outline.svg">
             </div>
         </a>
         <a href="{{ route('profile.edit') }}" class="simple-text logo-normal">
@@ -42,7 +42,7 @@
                 </a>
             </li>
             <li class="{{ $elementActive == 'users_management' ? 'active' : '' }}">
-                <a href="{{ route('users.index', 'users_management') }}">
+                <a href="{{ route('users_management') }}">
                     <i class="nc-icon nc-badge"></i>
                     <p>{{ __('Users Management') }}</p>
                 </a>

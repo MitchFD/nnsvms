@@ -22,13 +22,10 @@ class CreateStudentsTable extends Migration
             $table->string('student_year_level');
             $table->string('student_section');
             $table->string('student_school');
-            $table->string('student_a_y');
-            $table->string('student_semester');
-            $table->string('student_gender');
             $table->tinyInteger('student_age');
+            $table->string('student_sex');
             $table->string('student_email');
             $table->bigInteger('student_phone_num');
-            // $table->timestamps();
         });
     }
 

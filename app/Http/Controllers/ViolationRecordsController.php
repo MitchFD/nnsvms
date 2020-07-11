@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Students;
 use App\Violation;
+use App\Users;
 use DB;
 use DataTables;
 
@@ -36,11 +37,22 @@ class ViolationRecordsController extends Controller
         return view("violation_records.index")->with('violations', $violations);
     }
 
-    public function student($student_id){
-        // get all student's violation records
-        $student = Students::where('student_id', $student_id)->first();
-        $offenses = Violation::where('student_id', $student_id)->get();
+    public function student_records($student_id){
+        // $student = DB::table('students_tbl')
+        //     ->join('violations_tbl', 'violations_tbl.student_id', '=', 'students_tbl.student_id')
+        //     ->where('violations_tbl.student_id', '=', $student_id)
+        //     ->first();
 
-        return view("violation_records.student")->with('student', $student);
+        $student_id = $student_id;
+        $student    = Students::where('student_id', $student_id)->first();
+        $offenses   = Violation::where('student_id', $student_id)->get();
+        $user       = DB::table('violations_tbl')->join('users_tbl', 'users_tbl.id', '=', 'violations_tbl.user_id')
+                        ->first();
+
+        if($student === null){
+            return view("violation_records.student_records")->with(compact('student', 'student_id', 'offenses', 'user'));
+        }
+
+        return view("violation_records.student_records")->with(compact('student', 'offenses', 'user'));
     }
 }

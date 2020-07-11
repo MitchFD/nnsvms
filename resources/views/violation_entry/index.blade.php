@@ -7,7 +7,7 @@
     <div class="content">
         <div class="row mb-3">
             <div class="col-lg-12 col-md-12 col-12">
-                <h6>{{ __('Violation Entry') }}</h6>
+                <h6 class="dir_link_active">{{ __('Violation Entry') }}</h6>
             </div>
         </div>
         @if (session('status'))
@@ -31,7 +31,7 @@
                             </div>
                         </div>
                         <div class="illustration_div">
-                            <img class="illustration_search_student" src="{{ asset('paper/illustrations/search_student_illustration.svg') }}" alt="">
+                            <img class="illustration_search_student" src="{{ asset('paper/illustrations/illustration_violation_entry.svg') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -51,156 +51,6 @@
                                     
                 </div>
                 {{ csrf_field() }}
-            </div>
-        </div>
-    </div>
-
-    <!-- Violation Form Modal -->
-    <div class="modal fade" id="violationEntryForm" tabindex="-1" role="dialog" aria-labelledby="violationEntryFormLabel" aria-hidden="true">
-        <div class="modal-dialog modal_w">
-            <div class="modal-content modal-card">
-                <div class="modal-header d-flex align-items-center">
-                    <h5 class="modal-title" id="violationEntryFormLabel">Violation Entry</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body pb-0" id="violationFormModalBody">
-                    <div class="cotainer-fluid">
-                        <div class="row d-flex justify-content-center">
-                            <div class="form_title_div mt-4 mb-4">
-                                <p class="DSAS_txt">DEPARTMENT OF STUDENT AFFAIRS AND SERVICES</p>
-                                <p class="SDU_txt">STUDENT DISCIPLINE UNIT</p>
-                                <p class="violation_form_txt">VIOLATION FORM</p>
-                            </div>
-                        </div>
-                        <div id="studentDetails">
-                            
-                            {{ csrf_field() }}
-                        </div>
-                    {{--                             
-                        <div class="row d-flex justify-content-center mt-0">
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <div id="studentDetails" class="card-body student_details_card d-flex justify-content-start px-4">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <div class="card-body student_offenses_card">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <p class="offense_title">MINOR OFFENSES</p>
-                                            <div class="form-group">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" name="" class="custom-control-input circle_cb" id="mv1">
-                                                    <label class="custom-control-label cb_label" for="mv1">Violation of Dress Code</label> 
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" name="" class="custom-control-input circle_cb" id="mv2">
-                                                    <label class="custom-control-label cb_label" for="mv2">Not Wearing the Prescribed Uniform</label> 
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" name="" class="custom-control-input circle_cb" id="mv3">
-                                                    <label class="custom-control-label cb_label" for="mv3">Not Wearing an ID</label> 
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" name="" class="custom-control-input circle_cb" id="mv4">
-                                                    <label class="custom-control-label cb_label" for="mv4">Littering</label> 
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" name="" class="custom-control-input circle_cb" id="mv5">
-                                                    <label class="custom-control-label cb_label" for="mv5">Using Cellular Phones and Other E-Gadgets while having a class</label> 
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" name="" class="custom-control-input circle_cb" id="mv6">
-                                                    <label class="custom-control-label cb_label" for="mv6">Body Piercing</label> 
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" name="" class="custom-control-input circle_cb" id="mv7">
-                                                    <label class="custom-control-label cb_label" for="mv7">Indicent Public Display of Affection</label> 
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <p class="offense_title">LESS SERIOUS OFFENSES</p>
-                                            <div class="form-group">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" name="" class="custom-control-input circle_cb" id="lv1">
-                                                    <label class="custom-control-label cb_label" for="lv1">Wearing Somebody Elses ID</label> 
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" name="" class="custom-control-input circle_cb" id="lv2">
-                                                    <label class="custom-control-label cb_label" for="lv2">Wearing tampered/Unauthorized ID</label> 
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" name="" class="custom-control-input circle_cb" id="lv3">
-                                                    <label class="custom-control-label cb_label" for="lv3">Lending his/Her ID</label> 
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" name="" class="custom-control-input circle_cb" id="lv4">
-                                                    <label class="custom-control-label cb_label" for="lv4">Smoking or Possession of Smoking Paraphernalia</label> 
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <div class="form-group">
-                                                <label for="ov" class="offense_title">Others</label>
-                                                <textarea class="form-control" id="ov" rows="4"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <p class="recorded_by_txt"><i class="nc-icon nc-alert-circle-i mr-1 font-weight-bold"></i> Recorded by: <span class="font-weight-bold ml-1 text-secondary">{{ auth()->user()->user_role }} {{ auth()->user()->first_name }} {{ auth()->user()->last_name }}</span> </p>
-                            </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <p class="recorded_date_txt"><i class="nc-icon nc-calendar-60 mr-1 font-weight-bold"></i> January 20, 2020 <span class="font-weight-bold ml-1 text-secondary">10:41 PM</span> </p>
-                            </div>
-                        </div>
-                    --}}
-                    </div>
-                </div>
-                <div class="modal-footer pt-0 d-block">
-                    <div class="row mt-2">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <p class="recorded_by_txt"><i class="nc-icon nc-tap-01 mr-1 font-weight-bold"></i> {{ auth()->user()->user_role }}: <span class="font-weight-bold ml-1 text-secondary"> {{ auth()->user()->first_name }} {{ auth()->user()->last_name }}</span> </p>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-lg-12 col-md-12 col-sm-12 pl-0">
-                            <p class="recorded_date_txt"><i class="nc-icon nc-calendar-60 mr-1 font-weight-bold"></i> January 20, 2020 <span class="font-weight-bold ml-1 text-secondary">10:41 PM</span> </p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

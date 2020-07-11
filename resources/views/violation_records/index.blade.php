@@ -7,7 +7,7 @@
     <div class="content">
         <div class="row mb-3">
             <div class="col-lg-12 col-md-12 col-12">
-                <h6>{{ __('Violation Records') }}</h6>
+                <h6 class="dir_link_active">{{ __('Violation Records') }}</h6>
             </div>
         </div>
         <div class="row mt-3">
@@ -31,7 +31,7 @@
                 <div class="card shadow">   
                     <div class="card-body p-0">
                         <div class="violation_records_table">
-                            <table class="table table-hover">
+                            <table class="table table-hover m-0 border-0">
                                 <thead class="text-primary thead-svms-blue position-sticky">
                                     <th class="text-left">{{ __('Date/Time') }}</th>
                                     <th class="text-left">{{ __('Student Number') }}</th>
@@ -44,11 +44,11 @@
                                 <tbody>
                                     @if(count($violations) > 0)
                                     @foreach($violations as $row)
-                                    <tr class="vr_link" data-href="{{ url('violation_records/student', [ 'student_id' => $row->student_id ]) }}">
+                                    <tr class="vr_link" data-href="{{ route('student_records',['student_id'=>$row->student_id]) }}">
                                         <td>{{date('F j, Y h:i A | l', strtotime($row->created_at))}}</td>
                                         <td>{{$row->student_id}}</td>
                                         <td>{{$row->student_last_name}}, {{$row->student_first_name}}</td>
-                                        <td>{{$row->student_gender}}</td>
+                                        <td>{{$row->student_sex}}</td>
                                         <td>{{$row->student_course}}-{{$row->student_section}}</td>
                                         <td>{{$row->student_school}}</td>
                                         <td class="text-center"><span class="font-weight-bold">{{$row->offense_count}}</span> offense/s found</td>
@@ -56,7 +56,7 @@
                                     @endforeach
                                     @else
                                     <tr>
-                                        <td colspan="6" class="text-center">
+                                        <td colspan="7" class="text-center">
                                             <img class="vr_no_available_data mt-2 mb-3" src="{{ asset('paper/illustrations/violation_records_no_available_data.svg') }}" alt="">
                                             <p class="text-muted font-italic">No Availabale Records Found...</p>
                                         </td>
@@ -66,7 +66,8 @@
                             </table>
                         </div>
                     </div>
-                    <div class="card-footer vr_card_footer">
+                    @if(count($violations) > 0)
+                    <div class="card-footer vr_card_footer pt-2">
                         <div class="row">
                             <div class="col-lg-3 col-md-4 col-sm-12 p-0">
                                 <div class="form-group">
@@ -81,6 +82,7 @@
                             </div>
                         </div>
                     </div>
+                    @endif
                 </div>
             </div>
         </div>

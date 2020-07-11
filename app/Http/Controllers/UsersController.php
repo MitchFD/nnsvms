@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use App\User;
 use App\Users;
+use App\Userroles;
 
 class UsersController extends Controller
 {
@@ -17,8 +18,15 @@ class UsersController extends Controller
      */
     public function index()
     {
-        $users = Users::where('user_role', 'Guard')->get();
-        return view('users.user_management')->with('users', $users);
+        $users      = Users::get();
+        $user_roles = Userroles::get();
+        return view('users.user_management')->with(compact('users', 'user_roles'));
+    }
+
+    public function user($user_id)
+    {
+        $users = Users::where('id', $user_id)->first();
+        return view('users.user')->with('users', $users);
     }
 
     /**
@@ -48,20 +56,40 @@ class UsersController extends Controller
 
         // Create Register
         $register = new Users;
-        $register->last_name        = $request->input('last_name');
-        $register->first_name       = $request->input('first_name');
-        $register->first_name       = $request->input('first_name');
-        $register->employee_id      = $request->input('employee_id');
+        $register->username         = $request->input('username');
+        $register->user_last_name   = $request->input('user_last_name');
+        $register->user_first_name  = $request->input('user_first_name');
+        $register->user_employee_id = $request->input('user_employee_id');
         $register->user_description = $request->input('user_description');
+        $register->email            = $request->input('user_email');
         $register->user_role        = $request->input('user_role');
         $register->user_image       = $fileNameToStore;
-        $register->email            = $request->input('email');
-        $register->password         = $request->input('password');
+        $register->password         = Hash::make($request->input('user_password'));
         $register->created_at       = now();
         $register->updated_at       = now();
         $register->save();
 
         return back()->withRegisterStatus(__('New User Registered Successfully.'));
+    }
+
+    /**
+     * Create New User Role
+     *
+     *  @param App\Http\Requests\RegisterRequest $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function create_user_role(Request $request)
+    {
+
+        // Create New User Role
+        $create_user_role = new Userroles;
+        $create_user_role->user_role        = $request->input('new_user_role');
+        $create_user_role->user_role_access = json_encode(request('new_user_role_access'));
+        $create_user_role->created_at       = now();
+        $create_user_role->updated_at       = now();
+        $create_user_role->save();
+
+        return back()->withRegisterUserRoleStatus(__('New User Role Registered Successfully.'));
     }
 
     /**

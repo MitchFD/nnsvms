@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateViolationsTable extends Migration
+class CreateUseractivitiesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,22 +13,17 @@ class CreateViolationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('violations_tbl', function (Blueprint $table) {
-            $table->id('violation_id');
+        Schema::create('user_activities_tbl', function (Blueprint $table) {
+            $table->id('activity_id');
             $table->timestamp('created_at')->format('Y-d-m h:i:s A l');
             $table->timestamp('updated_at')->format('Y-d-m h:i:s A l');
-            $table->unsignedTinyInteger('offense_count');
-            $table->json('minor_offenses')->nullable();
-            $table->json('less_serious_offenses')->nullable();
-            $table->json('other_offenses')->nullable();
-            $table->unsignedBigInteger('student_id');
-                $table->foreign('student_id')->references('student_id')->on('students_tbl')
-                        ->onDelete('cascade')
-                        ->onUpdate('cascade');
             $table->unsignedBigInteger('user_id');
                 $table->foreign('user_id')->references('id')->on('users_tbl')
                         ->onDelete('cascade')
                         ->onUpdate('cascade');
+            $table->string('activity_type');
+            $table->string('activity_details');
+            $table->unsignedBigInteger('affected_key');
         });
     }
 
@@ -39,6 +34,6 @@ class CreateViolationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('violations_tbl');
+        Schema::dropIfExists('user_activities_tbl');
     }
 }

@@ -2833,6 +2833,12 @@ a.text-danger:hover {
   color: #ef8157 !important;
 }
 
+.text-sdca-red,
+a.text-sdca-red:focus,
+a.text-sdca-red:hover {
+  color: #BD171B !important;
+}
+
 .text-gray,
 a.text-gray:focus,
 a.text-gray:hover {
@@ -3077,9 +3083,20 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
   background-color: #ef8157;
 }
 
-.badge.badge-sdca {
+.badge.badge-sdca-light {
+  border-color: #FBF1F1;
+  background-color: #FBF1F1;
+  color: #BD171B;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 12px;
+  border-radius: 25px;
+}
+
+.badge.badge-sdca{
   border-color: #BD171B;
   background-color: #BD171B;
+  color: #fff;
 }
 
 .badge.badge-neutral {
@@ -3787,13 +3804,15 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 }
 
 .dropdown-menu .dropdown-item {
-  color: #66615b;
+  color: #2F2E41;
   font-size: 14px;
   padding: 10px 45px 10px 15px;
   clear: both;
   white-space: nowrap;
   width: 100%;
   display: block;
+  overflow: hidden !important;
+  cursor: pointer !important;
 }
 
 .dropdown-menu .dropdown-item img {
@@ -3828,11 +3847,13 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
   color: #FFFFFF !important;
   opacity: 1;
   text-decoration: none;
+  overflow: hidden !important;
 }
 
 .dropdown-menu .dropdown-item:hover,
 .dropdown-menu .dropdown-item:focus {
-  background-color: #66615B;
+  background-color: #2F2E41;
+  /* background-color: #66615B; */
 }
 
 .dropdown-menu.dropdown-primary .dropdown-item:hover,
