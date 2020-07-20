@@ -29,6 +29,7 @@ class CreateViolationsTable extends Migration
                 $table->foreign('user_id')->references('id')->on('users_tbl')
                         ->onDelete('cascade')
                         ->onUpdate('cascade');
+            $table->timestamp('recovered_at')->format('Y-d-m h:i:s A l');
         });
     }
 

@@ -16,13 +16,13 @@ class UserRolesSeeder extends Seeder
         DB::table('user_roles_tbl')->insert([
             [
                 'user_role'         => 'Administrator',
-                'user_role_access'  => '["Profile", "Announcement", "Dashboard", "Violation Entry", "Violation Records", "Users Management", "Student Handbook"]',
+                'user_role_access'  => '["profile", "announcement", "dashboard", "violation entry", "violation records", "users management", "student handbook"]',
                 'created_at'        => now(),
                 'updated_at'        => now()
             ],
             [
                 'user_role'         => 'Security Guard',
-                'user_role_access'  => '["Profile", "Violation Entry", "Student Handbook"]',
+                'user_role_access'  => '["profile", "violation entry", "student handbook"]',
                 'created_at'        => now(),
                 'updated_at'        => now()
             ]

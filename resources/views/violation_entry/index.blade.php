@@ -222,8 +222,8 @@
         });
     </script> --}}
 
+{{-- Search Autocomplete Student --}}
     <script>
-        // process autocomplete search
         $(document).ready(function(){
             $('#search_student').keyup(function(){ 
                 var query = $(this).val();
@@ -250,9 +250,10 @@
                 // });  
         });
     </script>
+{{-- Search Autocomplete Student End --}}
 
+{{-- Get student id and dispaly in Violation Form --}}
     <script>
-        // get student_id and display students details on Violation Form Modal
         function violationForm(student_id){
             $.ajax({
                 url:"{{ route('violation_entry.form') }}",
@@ -265,7 +266,9 @@
             });
         };
     </script>
+{{-- Get student id and dispaly in Violation Form  End --}}
 
+{{-- Add Other Offenses Input Field --}}
     <script>
         var maxField = 5;
         var x = 1;
@@ -299,7 +302,9 @@
             //     });
             // });
     </script>
+{{-- Add Other Offenses Input Field End --}}
 
+{{-- Enable Record Offenses Button when Input text is not empty --}}
     <script>
         function manage(hasText) {
             if (hasText.value != '') {
@@ -310,6 +315,8 @@
             }
         }   
     </script>
+{{-- Enable Record Offenses Button when Input text is not empty End --}}
+
 
     <script>
         function check() {

@@ -17,15 +17,14 @@ class Users extends Model
      */
     protected $table = 'users_tbl';
     protected $fillable = [
-        'username', 
-        'user_last_name', 
-        'user_first_name', 
-        'user_employee_id',
-        'user_description', 
+        'id',
         'user_role',
         'user_image', 
-        'email', 
+        'user_last_name', 
+        'user_first_name', 
+        'username',
         'password',
+        'email', 
     ];
     public $primaryKey = 'id';
     public $timestamps = false; 

@@ -26,6 +26,25 @@ a.text_sdca:hover {
     margin: 0px 16px !important;
 }
 
+/* customized nav-link */
+.nav-pills > .custom_navlink_blue > a.active{
+    background-color: #2F2E41 !important;
+    color: #fff !important;
+}
+.nav-pills > .custom_navlink_blue > a{
+    background-color: transparent !important;
+    color: #2F2E41 !important;
+}
+.nav-pills > .custom_navlink_blue > a:hover{
+    background-color: #C0C0C5 !important;
+    color: #2F2E41 !important;
+}
+.nav-pills > .custom_navlink_blue > a:focus,
+.nav-pills > .custom_navlink_blue > a:active{
+    background-color: #2F2E41 !important;
+    color: #fff !important;
+}
+
 /* custom background-colors colors */
 /* light blue background */
 .bg_light_blue{
@@ -90,6 +109,11 @@ a.text_sdca:hover {
     line-height: normal !important;
 }
 
+/* custom card-body bg */
+.cb_light_bg{
+    background-color: #f8f9fa !important;
+}
+
 
 /* customized collapse button with chage icon */
 .collapse_btn_txt{
@@ -144,6 +168,24 @@ a.text_sdca:hover {
     color: #2F2E41 !important;
 }
 
+/* darken-gray collapse button */
+.collapse_btn_block_gray{
+    margin: 0px !important;
+    background-color: #E7E6E4 !important;
+    color: #2F2E41 !important; 
+    border-radius: 12px;
+}
+.collapse_btn_block_gray:hover{
+    background-color: #DEDEDE !important;
+    color: #2F2E41 !important;
+}
+.collapse_btn_block_gray:focus,
+.collapse_btn_block_gray:active,
+.collapse_btn_block_gray:active:focus{
+    background-color: #E7E6E4 !important;
+    color: #2F2E41 !important;
+}
+
 /* Card */
 .br_radius_all{
     border-radius: 12px !important;
@@ -172,6 +214,9 @@ a.text_sdca:hover {
 
 .cust_card_header{
     padding: 25px 25px 0px 25px !important;
+}
+.cust_card_header_2{
+    padding: 25px 25px 25px 25px !important;
 }
 .cust_card_title{
     font-size: 25px !important;
@@ -352,8 +397,8 @@ a.sdca_link{
         text-decoration: none;
         position: absolute;
         border-radius: 25px;
-        margin-left: 280px;
-        margin-top: -70px;
+        margin-left: 250px;
+        margin-top: -60px;
     }
     .input.uploadFile{
         width: 0px;
@@ -500,6 +545,13 @@ td.td_left{
 .user_activity_table_div thead th{
     position: sticky;
     top: 0;
+}
+.with_bg{
+    background-color: #f5f5f5;
+}
+.no_data_yet_img{
+    height: 280px;
+    width: auto;
 }
 
 /* User Management */
@@ -700,7 +752,7 @@ td.td_left{
     flex-wrap: nowrap;
 }
 .notice_div{
-    margin: 30px 0px 0px 30px !important;
+    margin: 20px 0px 0px 30px !important;
     line-height: normal;
     vertical-align: middle;
     width: 800px;
@@ -994,8 +1046,8 @@ div.illustration_div{
     margin-left: auto !important;
     margin-right: 0px !important;
 }
-img.illustration_violation_records{
-    height: 300px !important;
+img.illustration_svg{
+    height: 280px !important;
     width: auto;
     margin-top: -70px;
     border-top-right-radius: 12px;

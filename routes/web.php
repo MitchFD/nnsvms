@@ -40,9 +40,14 @@ Route::group(['middleware' => 'auth'], function () {
 // Users Management Group
 Route::group(['middleware' => 'auth'], function(){
 	Route::get('users_management', ['as' => 'users_management', 'uses' => 'UsersController@index']);
-	Route::put('users/create', ['as' => 'users.create', 'uses' => 'UsersController@create']);
+	Route::post('users/verify_email', ['as' => 'users.verify_email', 'uses' => 'UsersController@verify_email']);
+	Route::put('users/create_employee_user', ['as' => 'users.create_employee_user', 'uses' => 'UsersController@create_employee_user']);
+	Route::put('users/create_student_user', ['as' => 'users.create_student_user', 'uses' => 'UsersController@create_student_user']);
 	Route::get('users_management/user/{user_id}', ['as' => 'users_management.user', 'uses' => 'UsersController@user']);
 	Route::put('users/create_user_role', ['as' => 'users.create_user_role', 'uses' => 'UsersController@create_user_role']);
+	Route::get('users/edit_user_role', ['as' => 'users.edit_user_role', 'uses' => 'UsersController@edit_user_role']);
+	Route::get('users/update_user_role', ['as' => 'users.update_user_role', 'uses' => 'UsersController@update_user_role']);
+	Route::get('users/remove_user_role', ['as' => 'users.remove_user_role', 'uses' => 'UsersController@remove_user_role']);
 	// Route::get('users/user_management/', ['as' => 'users.show', 'uses' => 'UsersController@show']);
 });
 

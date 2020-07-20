@@ -18,12 +18,17 @@ class Deletedviolations extends Model
     protected $table = 'deleted_violations_tbl';
     protected $fillable = [
         'from_violation_id',
-        'deleted_offenses' => 'array',
+        'deleted_offense_count',
+        'deleted_minor_offenses' => 'array',
+        'deleted_less_serious_offenses' => 'array',
+        'deleted_other_offenses' => 'array',
         'reason_deletion',
         'user_id',
     ];
     protected $cast = [
-        'deleted_offenses' => 'array',
+        'deleted_minor_offenses' => 'array',
+        'deleted_less_serious_offenses' => 'array',
+        'deleted_other_offenses' => 'array',
     ];
     public $primaryKey = 'deletion_id';
     public $timestamps = false; 

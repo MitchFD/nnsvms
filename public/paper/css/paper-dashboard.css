@@ -3446,6 +3446,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
   color: #66615B;
 }
 
+
 .navbar .logo-container {
   width: 27px;
   height: 27px;
@@ -4188,6 +4189,10 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 
 .alert.alert-danger {
   background-color: #f1926e;
+}
+
+.alert.alert-danger-sdca-red {
+  background-color: #E65155;
 }
 
 .alert.alert-warning {

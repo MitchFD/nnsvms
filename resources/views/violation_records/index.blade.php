@@ -19,7 +19,7 @@
                             <p class="card_sub_title text-muted">The table below shows the lists of recorded violations committed by the college students of St. Dominic College of Asia. <span class="font-weight-bold font-italic">Click on any row to view more details</span> and process corresponding sanction/s.</p>
                         </div>
                         <div class="illustration_div">
-                            <img class="illustration_violation_records" src="{{ asset('paper/illustrations/illustration_violation_records.svg') }}" alt="">
+                            <img class="illustration_svg" src="{{ asset('paper/illustrations/illustration_violation_records.svg') }}" alt="">
                         </div>
                     </div>
                 </div>
